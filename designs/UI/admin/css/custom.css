@@ -59,7 +59,7 @@ i .nav-item .nav-link .bg-blue{
 }
 
 /* -------------------------------------buttton------- */
-button .btn .btn-primary .col-12 .bg-color-custom:important{
+button .btn .btn-primary .col-12 .bg-color-custom !important{
     background-color:#6631E0;
 }
 
