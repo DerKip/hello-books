@@ -59,7 +59,7 @@ i .nav-item .nav-link .bg-blue{
 }
 
 /* -------------------------------------buttton------- */
-button .btn .btn-primary .col-12 .bg-color-custom !important{
+button .btn .btn-primary .col-12 .bg-color-custom{
     background-color:#6631E0;
 }
 
@@ -71,7 +71,9 @@ button .btn .btn-primary .col-12 .bg-color-custom !important{
     align-items: center;
     justify-content: space-around;
 }
-
+{
+    overflow-y:visible;
+}
 
 /* -------------------------------------------------- END OF FORM---------------------------------------------------------------------- */
 
