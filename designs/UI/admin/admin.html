@@ -15,7 +15,7 @@
   <div class="container bg-white">
     
     <!--- ******************************************  Navbar ***************************************************  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <!-- Logo -->
       <a class="navbar-brand navbar-custom" href="admin.html"><img src="img/logo.png"><span>HelloBooks <small>Admin</small></span></a>
  
@@ -24,6 +24,11 @@
       </button>
  
       <div class="collapse navbar-collapse navbar-bg-custom" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link bg-blue" href="index.html">Log Out</a> 
+                </li>         
+            </ul>
         </div>
     </nav>
    <!--- ****************************************** end of Navbar***************************************************  -->
@@ -35,9 +40,54 @@
          
            
          <div class="row">
-          <div id="library" class="col-md-6"><img src="img/library.png"></div>
-        </div>
-       
+           
+          <div class="col-lg-3">
+              <div class="card">
+                  <button type="button" class="btn btn-light rounded-0">Add Books</button>
+                  <a href=""></a><button type="button" class="btn btn-light rounded-0">Borrowed Books</button>
+                  <a href=""></a><button type="button" class="btn btn-light rounded-0">Users</button>
+                </div>
+          </div>
+             <div class="col-lg-9">
+               
+                 <!--***************************** form ******************************* -->
+                 <table class="table table-striped table-light">
+                     <thead>
+                       <tr>
+                         <th scope="col"></th>
+                         <th scope="col">Book Title</th>
+                         <th scope="col">Author Name</th>
+                         <th scope="col">Edition</th>
+                         <th scope="col">Date Borrowed</th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <th scope="row">1</th>
+                         <td>foo</td>
+                         <td>foo</td>
+                         <td>foo</td>
+                         <td>foo</td>
+                       </tr>
+                       <tr>
+                         <th scope="row">2</th>
+                         <td>foo</td>
+                         <td>foo</td>
+                         <td>foo</td>
+                         <td>foo</td>
+                       </tr>
+                       <tr>
+                         <th scope="row">3</th>
+                         <td>foo</td>
+                         <td>foo</td>
+                         <td>foo</td>
+                         <td>foo</td>
+                       </tr>
+                     </tbody>
+                   </table>
+                 <!--***************************** end of form ******************************* -->
+             </div>
+       </div>
         
 
       </div>
