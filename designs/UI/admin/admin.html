@@ -41,13 +41,65 @@
            
          <div class="row">
            
-          <div class="col-lg-3">
+          <div class="col-lg-3 mb-4">
               <div class="card">
-                  <button type="button" class="btn btn-light rounded-0">Add Books</button>
+                  <button data-toggle="modal" data-target="#modalCenter" type="button" class="btn btn-light rounded-0">Add Books</button>
+                  
                   <a href=""></a><button type="button" class="btn btn-light rounded-0">Borrowed Books</button>
                   <a href=""></a><button type="button" class="btn btn-light rounded-0">Users</button>
                 </div>
           </div>
+          
+           <!-- Modal -->
+        <div class="modal fade col-md-7" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="false">
+            <div class="modal-dialog modal-dialog-box" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalAddBook"><center>Add Book</center></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- ******************* Modal Add book form **************************** -->
+                  <form>
+                      <div class="form-row form-custom">                  
+                        <div class="col">
+                          <h5>Book Title</h5>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <br>
+                      <div class="form-row form-custom">                  
+                          <div class="col">
+                            <h5>Author</h5>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <br>
+                        <div class="form-row form-custom">                  
+                            <div class="col">
+                              <h5>Edition</h5>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <br>
+
+                    </form>
+
+
+
+
+                  <!-- **********************end  Modal  add book****************************** -->
+                 
+                </div>
+                <div class="modal-footer align-content-center">
+                            <button type="button" class=" btn btn-primary bg-color-custom">Add Book</button>
+                    <br>
+                </div>
+              </div>
+            </div>
+          </div><!--end of modal form-->
              <div class="col-lg-9">
                
                  <!--***************************** form ******************************* -->
@@ -88,7 +140,7 @@
                  <!--***************************** end of form ******************************* -->
              </div>
        </div>
-        
+
 
       </div>
         <!-- ******************************************  footer   ******************************* -->
