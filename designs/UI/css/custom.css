@@ -68,10 +68,24 @@ button .btn .btn-primary .col-12 .bg-color-custom:important{
 }
 
 /* -------------------------------------------------- END OF FORM---------------------------------------------------------------------- */
+#userlinks a {
+    color:#3358DF; 
+    text-decoration:none;
+    margin-top: 10;
+}
 
-
+#userlinks ul {
+    list-style:none;
+    padding:0;
+    margin-left:5px;
+}
 
 /* --------------------------------------------------Floating books picture ----------------------------------------------------------- */
+#library img{
+    float: right;
+    margin-top: -205px;
+    position: relative;
+  }
 
 
 
