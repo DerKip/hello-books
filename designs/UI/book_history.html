@@ -37,22 +37,31 @@
    <!--- ****************************************** Jumbotron ***************************************************  -->
     <div class="jumbotron jumbotron-custom">
       <div class="row">
-           <div id="userlinks" class="col-lg-4">
-              <h2>User Name</h2>
-              <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-              <ul>
-                <li><a href="profile.html">Edit Profile</a></li>
-                <li><a href="books_borrowed.html">Books Borrowed</a></li>
-                <li><a href="book_history.html">Borrowing History</a> </li>
-              </ul>   
-            </div>
+          <div  class="col-md-4 col-sm-6 col-xs-12">
+             
+              <div class="card  bg-transparent ">
+                <center>
+                  <h5 class="mt-2">User Name</h5>
+                  <img class="rounded-circle mb-4" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="150" height="150">
+              </center>
+               </div>
+                
+        
+                <div class="card">   
+                    <button onclick="window.location.href='profile.html'"type="button" class="btn btn-light rounded-0 ">Edit profile</button>
+                    <br>
+                    <button onclick="window.location.href='books_borrowed.html'"type="button" class="btn btn-light rounded-0 ">Borrowed Books</button>
+                    <br>
+                    <button onclick="window.location.href='book_history.html'"type="button" class="btn btn-light rounded-0">Borrowing History</button>
+              </div>
+              </div>
             <div class="col-lg-8">
               
                 <!--***************************** form ******************************* -->
-                <table class="table table-striped">
+                <table class="table table-striped bg-white">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
+                        <th scope="col"></th>
                         <th scope="col">Book Title</th>
                         <th scope="col">Author Name</th>
                         <th scope="col">Edition</th>
@@ -90,6 +99,7 @@
                 <!--***************************** end of form ******************************* -->
             </div>
       </div>
+
       </div>
          <!--- ****************************************** end of Jumbotron ***************************************************  -->
          
