@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Hello Books</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body >
+
+  <div class="container bg-white">
+    
+    <!--- ******************************************  Navbar ***************************************************  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <!-- Logo -->
+      <a class="navbar-brand navbar-custom" href="index.html"><img src="img/logo.png"><span>HelloBooks</span></a>
+ 
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span><img src="img/custom-toogle.svg" ></span>
+      </button>
+ 
+      <div class="collapse navbar-collapse navbar-bg-custom" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link bg-blue" href="books.html">View Books</a> 
+            </li>          
+          </ul>
+        </div>
+    </nav>
+   <!--- ****************************************** end of Navbar***************************************************  -->
+
+   <!--- ****************************************** Jumbotron ***************************************************  -->
+    <div class="jumbotron jumbotron-custom">
+      <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 ">
+              <h1>Welcome!</h1>
+            <p>Want to borrow a book from our libraries? Sign up,to get started.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+              <h4>Sign Up</h4>
+               <!--***************************** form ******************************* -->
+              <form>
+                <div class="form-row form-custom">                  
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="User Name">
+                  </div>
+                </div>
+                <br>
+                <div class="form-row form-custom">                  
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                  </div>
+                <br>
+                <div class="form-row form-custom">
+                  <div class="col">
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                </div>
+                <br>
+                <div class="form-row form-custom">
+                    <div class="col">
+                      <input type="password" class="form-control" placeholder="Confirm Password">
+                    </div>
+                  </div>
+                <br>
+                <div>
+                    <button type="button" class=" btn btn-primary col-12 bg-color-custom">Sign in</button>
+                </div>
+                <div class="form-row">
+
+                    <div class="col  mt-2 ">
+                        <small>Already have an account?
+                            <span data-toggle="modal" data-target="#modalCenter"class="col pl-2"style="color:#6631E0">
+                            <b>Login</b>
+                          </span>
+                        </small>
+                    </div>
+                  </div>
+              </form>
+               <!--***************************** end of form ******************************* -->
+          </div><!---end of form-->
+          
+          <!-- Modal -->
+            <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="false">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLogin">Login</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- ******************* Modal Log in form **************************** -->
+                      <form>
+                          <div class="form-row form-custom">                  
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="User Name\Email">
+                            </div>
+                          </div>
+                          <br>
+                          <div class="form-row form-custom">                  
+                              <div class="col">
+                                <input type="password" class="form-control" placeholder="Password">
+                              </div>
+                            </div>
+                          <br>
+                          <div class="">
+                              <button type="button" class=" btn btn-primary col-12 bg-color-custom">Log in</button>
+                          </div>
+                        </form>
+
+
+
+
+                      <!-- **********************end  Modal log in form ****************************** -->
+                     
+                    </div>
+                    <div class="modal-footer">
+                        <div class="form-row">
+          
+                            <div class="col  mt-2 ">
+                                <small>
+                                    <span data-toggle="modal" data-target="#modalCenter"class="col pl-2"style="color:#6631E0">
+                                    <b>Forgot password? Reset</b>
+                                  </span>
+                                </small>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!--end of modal form-->
+
+        
+          </div><!--end of welcome row-->
+
+          
+
+      </div>
+         <!--- ****************************************** end of Jumbotron ***************************************************  -->
+         
+         
+         
+         <div class="row">
+            <div id="library" class="col-md-6"><img src="img/library.png"></div>
+          </div>
+         
+
+
+        <!-- ******************************************  footer   ******************************* -->
+        <footer class="text-muted ">
+          <div class="container  custom-footer">
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-lg-4">
+                  <img src="img/andelafooter.png">
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4">
+                  <img src="img/hellobooksfooter.png"width="120">
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4">
+                  <p>&copy <bold>Derrick</bold></p>
+              </div>  
+            </div>
+          </div>
+        </footer>
+      <!-- ******************************************  footer   ******************************* -->
+
+
+    </div>
+  </div>
+
+
+
+  
+    <!-- Optional js -->
+    <!-- JQuery first, Then popper.js then bootsrap JS ) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Books</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/custom.css">  
+
+
+</head>
+<body >
+
+  <div class="container bg-white">
+    
+    <!--- ******************************************  Navbar ***************************************************  -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- Logo -->
+      <a class="navbar-brand navbar-custom" href="admin.html"><img src="img/logo.png"><span>HelloBooks <small>Admin</small></span></a>
+ 
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span><img src="img/custom-toogle.svg"></span>
+      </button>
+ 
+      <div class="collapse navbar-collapse navbar-bg-custom" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link bg-blue" href="index.html">Log Out</a> 
+                </li>         
+            </ul>
+        </div>
+    </nav>
+   <!--- ****************************************** end of Navbar***************************************************  -->
+
+   <!--- ****************************************** Jumbotron ***************************************************  -->
+    <div class="jumbotron jumbotron-custom">   
+      
+      <div class="row "> <!--Search-->
+          <div class="col-4 pb-4 ">
+              <div class="input-group">
+                  <input class="form-control rounded-0"
+                         placeholder="looking for a book? ">
+                  <div class="input-group-addon" ><i class="fa fa-search"></i><Button class="btn bg-transparent ">Search </Button></div>
+                </div>
+          </div>
+        </div><!-- end of Search -->
+
+         <div class="row">
+           
+          <div class="col-lg-3 mb-4">
+              <div class="card">
+                  <button onclick="window.location.href='admin.html'"type="button" class="btn btn-light rounded-0 pb-2 pt-3 pl-5 pr-5">All books</button>
+                  <br>
+                  <button data-toggle="modal" data-target="#modalCenter" type="button" class="btn btn-light rounded-0 pb-2 pt-3">Add Books</button>
+                  <br>
+                  <button onclick="window.location.href='borrowed.html'"type="button" class="btn btn-light rounded-0 pb-2 pt-3 pl-5 pr-5 ">View Borrowed books</button>
+                 
+                </div>
+          </div>
+          
+           <!-- Modal -->
+        <div class="modal fade col-md-7" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="false">
+            <div class="modal-dialog modal-dialog-box" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalAddBook"><center>Add Book</center></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- ******************* Modal Add book form **************************** -->
+                  <form>
+                      <div class="form-row form-custom">                  
+                        <div class="col">
+                          <h5>Book Title</h5>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <br>
+                      <div class="form-row form-custom">                  
+                          <div class="col">
+                            <h5>Author</h5>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <br>
+                        <div class="form-row form-custom">                  
+                            <div class="col">
+                              <h5>Edition</h5>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <br>
+
+                    </form>
+
+                  <!-- **********************end  Modal  add book****************************** -->
+                 
+                </div>
+                <div class="modal-footer align-content-center">
+                            <button type="button" class=" btn btn-primary bg-color-custom">Add Book</button>
+                    <br>
+                </div>
+              </div>
+            </div>
+          </div><!--end of modal form-->
+             
+          
+          
+          <div class="col-lg-9">
+
+
+                 <!--***************************** Table******************************* -->  
+                 <table class="table table-striped table-light ">
+                     <thead>
+                       <tr>
+                         <th scope="col"></th>          
+                         <th scope="col">Book Title</th>
+                         <th scope="col">Author Name</th>
+                         <th scope="col">Edition</th>
+                         <th scope="col"></th>
+                         
+
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <th scope="row">1</th>
+                         <td class="ml-0"><input type="checkbox" class="form-check-input"id="select">Foo</td>
+                         <td>foo</td>
+                         <td>foo</td>
+                         <td><button data-toggle="modal" data-target="#modalModify" type="button" class=" btn btn-success rounded-0 pl-3 pr-3 ">modify</button></td>
+                         
+                         
+                       </tr>
+                       <tr>
+                         <th scope="row">2</th>
+                         <td><input type="checkbox" class="form-check-input"id="select">Foo</td>
+                         <td>foo</td>
+                         <td>foo</td>
+                         <td><button data-toggle="modal" data-target="#modalModify" type="button" class="btn btn-success rounded-0 pl-3 pr-3 ">modify</button></td>
+                         
+                         
+                       </tr>
+                       <tr>
+                         <th scope="row">3</th>                        
+                         <td class="p-d-2"><input type="checkbox" class="form-check-input p"id="select">foo</td>
+                         <td>foo</td>
+                         <td>foo</td>
+                         <td><button data-toggle="modal" data-target="#modalModify" type="button" class="btn btn-success rounded-0 pl-3 pr-3 ">modify</button></td>
+                       </tr>
+                     </tbody>
+                   </table>
+                 <!--***************************** end of Table******************************* -->
+             </div>
+       </div>
+          
+       <div class="row ">
+          <div class="col-11 ml-5">
+             <button data-toggle="modal" data-target="#deleteModal"type="button" class=" btn btn-danger float-right rounded-0"> Delete selected</button>
+          </div>
+         </div>   
+
+      </div>
+
+      <!--- ****************************************** end of Jumbotron ***************************************************  -->
+         
+
+
+<!-- ********************************************** modify modal***************************************************************************** -->
+
+        <div class="modal fade col-md-12" id="modalModify" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="false">
+            <div class="modal-dialog modal-dialog-box" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalModifybook"><center>Add Book</center></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- ******************* Modal Add book form **************************** -->
+                  <form>
+                      <div class="form-row form-custom">                  
+                        <div class="col">
+                          <h5>Book Title</h5>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <br>
+                      <div class="form-row form-custom">                  
+                          <div class="col">
+                            <h5>Author</h5>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <br>
+                        <div class="form-row form-custom">                  
+                            <div class="col">
+                              <h5>Edition</h5>
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                          <br>
+
+                    </form>
+
+                  <!-- **********************end  Modal****************************** -->
+                 
+                </div>
+                <div class="modal-footer align-content-center">
+                            <button type="button" class=" btn btn-succes">Update information</button>
+                    <br>
+                </div>
+              </div>
+            </div>
+          </div><!--end of modal form-->
+
+
+<!-- ********************************************** End modify modal***************************************************************************** -->
+
+
+
+      <!-- **************************************  Delete modal **************************** -->
+
+        <div class="modal fade col-md-12" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="odalCenterTitle" aria-hidden="false">
+            <div class="modal-dialog modal-dialog-box" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" style="color:red"> <b>Delete book</b></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- ******************* Modal delete confirm **************************** -->
+                  <form>
+                     
+                          <h5>Delete {selected} ?</h5>
+                          
+
+                    </form>
+                  <!-- **********************end modal delete****************************** -->
+                 
+                </div>
+                <div class="modal-footer align-content-center">
+                            <button type="button" class=" btn btn-danger rounded-0">Delete</button>
+                    <br>
+                </div>
+              </div>
+            </div>
+          </div><!--end of modal form-->
+
+      
+
+
+
+
+
+
+
+
+
+
+      <!-- **************************************  end of Delete modal **************************** -->
+
+
+
+
+      
+        <!-- ******************************************  footer   ******************************* -->
+        <footer class="text-muted ">
+          <div class="container  custom-footer">
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-lg-4">
+                  <img src="img/andelafooter.png">
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4">
+                  <img src="img/hellobooksfooter.png"width="120">
+              </div>
+              <div class="col-md-4 col-sm-6 col-lg-4">
+                  <p>&copy <bold>Derrick</bold></p>
+              </div>  
+            </div>
+          </div>
+        </footer>
+      <!-- ******************************************  footer   ******************************* -->
+
+
+    </div>
+  </div>
+
+
+
+  
+    <!-- Optional js -->
+    <!-- JQuery first, Then popper.js then bootsrap JS ) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
